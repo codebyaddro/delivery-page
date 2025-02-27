@@ -1,0 +1,336 @@
+/* -- fonts -- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=VT323&display=swap');
+
+/* -- root -- */
+
+:root {
+    --gray-white: #F0F1F2;
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray-black: #DDDDDD;
+    --light-black: #212523;
+    --light-black-op: #21252350;
+    --main-green: #157343;
+    --main-light: #37A000;
+    --orange: #FD7E14;
+    --lt-orange: #fee3cd;
+    --green: #008000;
+    --lt-green: #e9f6ec;
+    --red: #FF0000;
+    --light-red: #fbeaec;
+    --blue: #0000ff;
+    --lt-blue: #e6e6ff;
+}
+
+/* ---------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+    background-color: var(--gray-white);
+}
+
+::selection {
+    color: var(--white);
+    background-color: var(--main-light);
+}
+
+/* -- category container style -- */
+
+.brand-container {
+    width: 100%;
+    margin-top: 25px;
+}
+
+/* -- top menus style--  */
+
+.top-menus {
+    background-color: var(--white);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.top-menus ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    margin-left: -20px;
+}
+
+.top-menus ul li a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* -- active menu style -- */
+
+.active-menu {
+    color: var(--white)!important;
+    background-color: var(--main-green);
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+/* -- menu hover style -- */
+
+.light-up:hover {
+    color: var(--orange);
+}
+
+/* -- list container style -- */
+
+.list-container {
+    background-color: var(--white);
+    padding: 0px 20px;
+}
+
+/* -- heading-add-new-btn style -- */
+
+.heading-add-new-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--gray-black) ;
+}
+
+.heading h2 {
+    color: var(--light-black);
+    font-size: 25px;
+    font-weight: 500;
+}
+
+/* -- add-new-btn style -- */
+
+.add-new-btn {
+    display: flex;
+    gap: 5px;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.add-new-btn {
+    background-color: var(--main-green);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.add-new-btn a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.add-icon {
+    color: var(--white);
+    font-size: 20px;
+}
+
+/* -- list-short-dpdwn-search-box style -- */
+
+.list-short-dpdwn-search-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+/* -- list-short-dpdwn style -- */
+
+.list-short-dpdwn {
+    display: flex;
+    gap: 7.5px;
+    align-items: center;
+}
+
+.list-short-dpdwn h3 {
+    color: var(--light-black);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.list-short-dpdwn select {
+    color: var(--light-black);
+    appearance: none;
+    height: 25px;
+    width: 30px;
+    padding-left: 6px;
+    outline: none;
+    border-radius: 2.5px;
+}
+
+/* -- search-box style -- */
+
+.search-box {
+    display: flex;
+    align-items: center;
+}
+
+.search-box legend {
+    color: var(--light-black);
+    m
+}
+
+.search-box input {
+    outline: none;
+    height: 25px;
+    width: 193px;
+    border: 1px solid var(--gray-black);
+}
+
+/* -- table-list style --*/
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* -- thead style -- */
+
+thead {
+    cursor: pointer;
+}
+
+th, td {
+    border: 1px solid var(--gray-black);
+    padding: 10px 15px;
+}
+
+thead tr th {
+    font-size: 17.5px;
+    font-weight: 600;
+    text-align: left;
+}
+
+tbody tr td {
+    font-size: 14px;
+}
+
+tbody tr:hover {
+    background-color: var(--gray-white);
+}
+
+/* -- tbody style -- */
+
+/* payment status style */
+
+.ps-paid {
+    color: var(--green);
+    background-color: var(--lt-green);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 2.5px 7.5px;
+    border-radius: 5px;
+}
+
+.ps-cod {
+    color: var(--orange);
+    background-color: var(--lt-orange);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 2.5px 7.5px;
+    border-radius: 5px;
+}
+
+/* delivery status style */
+
+.ds-ocon {
+    color: var(--blue);
+    background-color: var(--lt-blue);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 2.5px 7.5px;
+    border-radius: 5px;
+}
+
+.ds-otw {
+    color: var(--orange);
+    background-color: var(--lt-orange);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 2.5px 7.5px;
+    border-radius: 5px;
+}
+
+.ds-deld {
+    color: var(--green);
+    background-color: var(--lt-green);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 2.5px 7.5px;
+    border-radius: 5px;
+}
+
+/* -- action style -- */
+
+.edit-icon {
+    color: var(--green);
+    background-color: var(--lt-green);
+    padding: 7px 7px;
+    margin-right: 2.5px;
+    border: 1px solid var(--green);
+    font-size: 20px;
+}
+
+.edit-icon:hover {
+    background-color: var(--light-black-op);
+}
+
+.delete-icon {
+    color: var(--red);
+    background-color: var(--light-red);
+    padding: 7px 7px;
+    margin-left: 2.5px;
+    border: 1px solid var(--red);
+    font-size: 20px;
+}
+
+.delete-icon:hover {
+    background-color: var(--light-black-op);
+}
+
+/* -- entries-details-list-page-btn style -- */
+
+.entries-details-list-page-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.entries-details {
+    color: var(--black);
+    font-size: 15px;
+}
+
+.list-page-btn {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.list-page-btn button {
+    color: var(--light-black);
+    background-color: var(--gray-white);
+    padding: 8px 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.list-page-btn h4 {
+    color: var(--white);
+    background-color: var(--main-light);
+    font-size: 15px;
+    font-weight: 400;
+    padding: 3px 12px;
+    border-radius: 5px;
+}
